@@ -1,4 +1,4 @@
-llocales==0.0.2
+locales
 streamlit
 pandas
 altair
