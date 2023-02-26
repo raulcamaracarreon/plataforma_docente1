@@ -1,0 +1,13 @@
+[general]
+email = "tu_email"
+
+[server]
+headless = true
+port = $PORT
+enableCORS = false
+
+[runner]
+magicEnabled = false
+
+[locale]
+defaultLocale = "es_ES"
