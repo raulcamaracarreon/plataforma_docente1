@@ -3,7 +3,6 @@ from cuestionario import cuestionario_page
 from respuestas import respuestas_page
 from Videoteca import videoteca_page
 import locale
-
 locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
 
 # Configuración de página
