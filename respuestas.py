@@ -18,7 +18,7 @@ def respuestas_page():
         st.stop()
 
     # Leer el archivo CSV con las respuestas
-    df = pd.read_csv('respuestas.csv', encoding='latin-1')
+    df = pd.read_csv('respuestas.csv', encoding='utf-8')
     
     # Mostrar las respuestas
     st.dataframe(df.style.set_properties(**{'font-size': '8pt'}), height=400)
