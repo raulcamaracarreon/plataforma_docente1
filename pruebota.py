@@ -2,8 +2,9 @@ import streamlit as st
 from cuestionario import cuestionario_page
 from respuestas import respuestas_page
 from Videoteca import videoteca_page
-import os
-os.environ['LC_ALL'] = 'es_MX.UTF-6'
+sudo locale-gen es_ES.UTF-8
+export LC_ALL=es_ES.UTF-8
+export LANG=es_ES.UTF-8
 # Configuración de página
 st.set_page_config(page_title="Cuestionario de autoevaluación de prácticas docentes", page_icon=":books:")
 
