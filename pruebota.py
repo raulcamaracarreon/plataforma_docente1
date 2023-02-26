@@ -3,7 +3,7 @@ from cuestionario import cuestionario_page
 from respuestas import respuestas_page
 from Videoteca import videoteca_page
 import os
-os.environ['LC_ALL'] = 'es_ES.UTF-8'
+os.environ['LC_ALL'] = 'es_MX.UTF-6'
 # Configuración de página
 st.set_page_config(page_title="Cuestionario de autoevaluación de prácticas docentes", page_icon=":books:")
 
