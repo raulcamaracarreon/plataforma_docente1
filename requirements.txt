@@ -1,1 +1,5 @@
-locales==0.2.1
+llocales==0.0.2
+streamlit
+pandas
+altair
+requests
