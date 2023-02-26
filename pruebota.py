@@ -3,7 +3,7 @@ from cuestionario import cuestionario_page
 from respuestas import respuestas_page
 from Videoteca import videoteca_page
 import locale
-locale.setlocale(locale.LC_ALL, 'es_MX.UTF-8')
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 # Configuración de página
 st.set_page_config(page_title="Cuestionario de autoevaluación de prácticas docentes", page_icon=":books:")
