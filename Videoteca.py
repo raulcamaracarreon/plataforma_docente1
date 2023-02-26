@@ -3,7 +3,8 @@ import streamlit as st
 import altair as alt
 from io import BytesIO
 import requests
-locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+import locale
+locale.setlocale(locale.LC_ALL, '')
 
 def videoteca_page():
     
