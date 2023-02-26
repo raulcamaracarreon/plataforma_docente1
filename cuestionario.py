@@ -1,8 +1,6 @@
 import streamlit as st
 import csv
 import pandas as pd
-import locale
-locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 def cuestionario_page():
     # Título de la aplicación
