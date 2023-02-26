@@ -1,7 +1,6 @@
 import streamlit as st
 import csv
 import pandas as pd
-
 def cuestionario_page():
     # Título de la aplicación
     st.title("Cuestionario de autoevaluación de prácticas docentes")
