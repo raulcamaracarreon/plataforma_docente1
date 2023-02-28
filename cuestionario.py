@@ -1,7 +1,8 @@
 import streamlit as st
 import csv
-import re
-
+import pandas as pd
+import locale
+locale.setlocale(locale.LC_ALL, '')
 def cuestionario_page():
     # Título de la aplicación
     st.title("Cuestionario de autoevaluación de prácticas docentes")
@@ -11,27 +12,7 @@ def cuestionario_page():
     apellido_paterno = st.text_input("Apellido paterno")
     apellido_materno = st.text_input("Apellido materno")
     nombres = st.text_input("Nombre(s)")
-    
-    # Validar la entrada de la clave CCT
-    def validate_cct(cct):
-        # Expresión regular para validar la clave CCT
-        pattern = r'^[1-3][0-9][FEK][A-Z]{2}\d{4}[A-Z0-9]$'
-        # Validar la entrada utilizando la expresión regular
-        if re.match(pattern, cct):
-            return True
-        else:
-            return False
-
-    # Interfaz de usuario para ingresar la clave CCT
-    cct = st.text_input("Ingrese la clave CCT:")
-    if cct:
-        if validate_cct(cct):
-            st.success("La clave CCT es válida.")
-        else:
-            st.error("La clave CCT no es válida. Por favor, ingrese una clave CCT válida en el formato indicado.")
-            return
-
-    # Preguntas del cuestionario
+    clave_cct = st.text_input("Clave CCT")
     st.write("Por favor ingrese la siguiente información:")
     st.write("1. ¿Considera que sus prácticas profesionales son efectivas?")
     pregunta_1 = st.selectbox("1. ¿Considera que sus prácticas profesionales son efectivas?", ['Totalmente de acuerdo', 'De acuerdo', 'En desacuerdo', 'Totalmente en desacuerdo'])
@@ -47,6 +28,5 @@ def cuestionario_page():
         # Guardar respuestas en archivo CSV
         with open('respuestas.csv', mode='a', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow([apellido_paterno, apellido_materno, nombres, cct, pregunta_1, pregunta_2, pregunta_3, pregunta_4])
-        st.success("Sus respuestas han sido enviadas
-
+            writer.writerow([apellido_paterno, apellido_materno, nombres, clave_cct, pregunta_1, pregunta_2, pregunta_3, pregunta_4])
+        st.success("Sus respuestas han sido enviadas.")
