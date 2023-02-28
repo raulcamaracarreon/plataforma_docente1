@@ -9,7 +9,7 @@ locale.setlocale(locale.LC_ALL, '')
 # Función para validar la entrada de la clave CCT
 def validate_cct(cct):
     # Expresión regular para validar la clave CCT
-    pattern = r'^[1-3][0-9][FEK][A-Z]{2}\d{4}[A-Z0-9]$'
+    pattern = r'^[1-3][0-9][A-Z][A-Z]{2}\d{4}[A-Z0-9]$'
     # Validar la entrada utilizando la expresión regular
     if re.match(pattern, cct):
         return True
