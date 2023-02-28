@@ -23,7 +23,7 @@ def cuestionario_page():
     # Formulario de entrada
 
     # Interfaz de usuario para ingresar la clave CCT
-    cct = st.text_input("Ingrese la clave CCT:")
+    cct = st.text_input("Ingrese la clave CCT usando mayúsculas:")
 
     # Validar la entrada de la clave CCT
     if validate_cct(cct):
