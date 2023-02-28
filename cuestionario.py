@@ -31,7 +31,7 @@ def cuestionario_page():
     else:
         st.error("La clave CCT no es válida. Por favor, ingrese una clave CCT válida en el formato indicado.")
 
-    st.write("Por favor ingrese la siguiente información:")
+    st.write("Por favoooooor ingrese la siguiente información:")
     apellido_paterno = st.text_input("Apellido paterno")
     apellido_materno = st.text_input("Apellido materno")
     nombres = st.text_input("Nombre(s)")
